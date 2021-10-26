@@ -6,6 +6,7 @@ import ChatScreen from './../screens/chat/ChatScreen';
 import LoadChat from '../screens/chat/LoadChat';
 import AgendaSearch from '../screens/agenda/AgendaSearch';
 import AgendaShow from '../screens/agenda/AgendaShow';
+import {LoginScreen, RegisterScreen} from '../screens';
 
 const Stack = createNativeStackNavigator();
 
@@ -33,6 +34,9 @@ const Router = () => {
       {/* Agenda */}
       <Stack.Screen name="AgendaSearch" component={AgendaSearch} />
       <Stack.Screen name="AgendaShow" component={AgendaShow} />
+      {/* Authentication */}
+      <Stack.Screen name="Login" component={LoginScreen} />
+      <Stack.Screen name="Register" component={RegisterScreen} />
     </Stack.Navigator>
   );
 };

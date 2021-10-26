@@ -1,20 +1,16 @@
 import React from 'react';
 import {StyleSheet, TextInput, View, TouchableOpacity} from 'react-native';
-import Home from '../../assets/logoSvg/home.svg';
 import Color from '../../utils/Color';
+import BackToAgenda from './../../include/BackToAgenda';
 
 const AgendaSearch = ({navigation}) => {
   return (
     <View style={{flex: 1}}>
+      <BackToAgenda navigation={navigation} />
       <View style={styles.header}>
         <View style={{flex: 10, justifyContent: 'center', marginRight: 10}}>
           <TextInput style={styles.input} placeholder="Search..." />
         </View>
-        <TouchableOpacity
-          onPress={() => navigation.navigate('home')}
-          style={{flex: 1, justifyContent: 'center', alignItems: 'center', marginRight: 10}}>
-          <Home widht={15} height={15} fill="white" />
-        </TouchableOpacity>
       </View>
     </View>
   );
@@ -32,7 +28,8 @@ const styles = StyleSheet.create({
   input: {
     backgroundColor: 'white',
     marginLeft: 10,
-    borderRadius: 10,
+    paddingLeft: 10,
+    borderRadius: 5,
     height: 40,
     flexDirection: 'row',
     alignItems: 'center',

@@ -18,8 +18,8 @@ import Shared from '../../assets/logoSvg/share.svg';
 import Whatsapp from '../../assets/logoSvg/whatsapp.svg';
 import Alarm from '../../assets/logoSvg/agenda.svg';
 import Color from '../../utils/Color';
-import Home from '../../assets/logoSvg/home.svg';
 import Chat from '../../assets/logoSvg/paper-plane.svg';
+import BackToAgenda from '../../include/BackToAgenda';
 
 const AgendaShow = ({navigation}) => {
   const onShare = async () => {
@@ -35,6 +35,7 @@ const AgendaShow = ({navigation}) => {
   };
   return (
     <View style={{flex: 1}}>
+      <BackToAgenda navigation={navigation} />
       <View style={{marginBottom: 50}}>
         <ScrollView style={styles.box}>
           <View style={styles.header}>
@@ -197,28 +198,50 @@ const AgendaShow = ({navigation}) => {
               </View>
             </View>
           </View>
-          <View
-            style={{
-              padding: 1,
-              marginBottom: 200,
-              backgroundColor: 'red',
-            }}></View>
+          <View style={styles.comment}>
+            <View style={styles.commentLeft}>
+              <Text style={{fontSize: 12, fontWeight: 'bold'}}>
+                Wahyu Agus arifin{' '}
+                <Text style={{fontSize: 10, color: 'green'}}>8 Hour ago</Text>
+              </Text>
+              <Text style={{fontSize: 11}}>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque,
+                nesciunt.
+              </Text>
+            </View>
+            <View style={styles.commentRight}>
+              <Text
+                style={{fontSize: 12, fontWeight: 'bold', textAlign: 'right'}}>
+                Me{' '}
+                <Text style={{fontSize: 10, color: 'green'}}>8 Hour ago</Text>
+              </Text>
+              <Text style={{fontSize: 11, textAlign: 'right'}}>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque,
+                nesciunt.
+              </Text>
+            </View>
+            <View style={styles.commentLeft}>
+              <Text style={{fontSize: 12, fontWeight: 'bold'}}>
+                Wahyu Agus arifin{' '}
+                <Text style={{fontSize: 10, color: 'green'}}>8 Hour ago</Text>
+              </Text>
+              <Text style={{fontSize: 11}}>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque,
+                nesciunt.
+              </Text>
+            </View>
+            <View style={styles.commentLeft}>
+              <Text style={{fontSize: 12, fontWeight: 'bold'}}>
+                Wahyu Agus arifin{' '}
+                <Text style={{fontSize: 10, color: 'green'}}>8 Hour ago</Text>
+              </Text>
+              <Text style={{fontSize: 11}}>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque,
+                nesciunt.
+              </Text>
+            </View>
+          </View>
         </ScrollView>
-      </View>
-      <View style={{position: 'absolute', bottom: 70, right: 20}}>
-        <TouchableOpacity
-          onPress={() => navigation.navigate('agenda')}
-          style={{
-            justifyContent: 'center',
-            alignItems: 'center',
-            backgroundColor: Color.first,
-            borderRadius: 50,
-            width: 40,
-            height: 40,
-            elevation: 5
-          }}>
-          <Home widht={15} height={15} fill="white" />
-        </TouchableOpacity>
       </View>
       <View style={styles.bottom}>
         <View style={{flex: 10, justifyContent: 'center'}}>
@@ -302,5 +325,21 @@ const styles = StyleSheet.create({
   },
   komentar: {
     padding: 10,
+  },
+  comment: {
+    padding: 1,
+    marginBottom: 200,
+  },
+  commentLeft: {
+    marginVertical: 2,
+    backgroundColor: '#eee',
+    padding: 5,
+    borderRadius: 3,
+  },
+  commentRight: {
+    marginVertical: 2,
+    backgroundColor: '#CCE0E3',
+    padding: 5,
+    borderRadius: 3,
   },
 });

@@ -2,7 +2,6 @@ import React from 'react';
 import {StyleSheet, View, Image} from 'react-native';
 import PenaPedia from '../assets/pena.svg';
 import PenaPediaActive from '../assets/pena-active.svg';
-
 import {Agenda, Obrolan, Beasiswa, Organisasi} from '../assets/logoSvg';
 
 const Imglogo = ({label, isFocused}) => {
