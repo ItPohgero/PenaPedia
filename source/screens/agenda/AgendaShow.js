@@ -44,9 +44,13 @@ const AgendaShow = ({navigation}) => {
             <TouchableOpacity
               onPress={() => navigation.navigate('AgendaShow')}
               style={styles.title}>
-              <Text style={{fontWeight: 'bold', fontSize: 13}}>PAC IPNU Magetan</Text>
+              <Text style={{fontWeight: 'bold', fontSize: 13}}>
+                PAC IPNU Magetan
+              </Text>
               <Text style={{fontSize: 10}}>Posted 12 Agustus 2021</Text>
-              <Text style={{fontSize: 10, color: 'green'}}>Terbuka untuk umum</Text>
+              <Text style={{fontSize: 10, color: 'green'}}>
+                Terbuka untuk umum
+              </Text>
             </TouchableOpacity>
             <View style={styles.link}>
               <TouchableOpacity>
@@ -76,9 +80,73 @@ const AgendaShow = ({navigation}) => {
               porro, voluptate expedita cum, dolorum eveniet magni voluptas ea
               perspiciatis quis laborum ab fugit repellendus vitae illo
               eligendi, nisi quibusdam alias dicta suscipit. Quisquam, veritatis
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Pariatur, officia? Quod modi veniam iste quos itaque aliquam
+              voluptate adipisci facere vero voluptatem sit animi in inventore,
+              fuga eos est non reiciendis! Ullam fuga quia saepe reiciendis
+              numquam. Corporis ipsum sunt nam voluptates, et amet enim esse
+              voluptatem atque? Adipisci, possimus consequatur provident illo
+              expedita architecto numquam, facere ab, nisi nobis nemo doloribus
+              et dicta beatae deserunt molestiae accusamus quam repellendus?
+              Harum eius ipsa maxime ea at suscipit minus recusandae nesciunt?
+              Culpa necessitatibus voluptate aperiam! Totam officia facere
+              placeat. Aliquid suscipit dolorem ullam. Animi architecto
+              excepturi tempore magni nemo, cupiditate non? Lorem ipsum dolor
+              sit, amet consectetur adipisicing elit. Dolor veniam similique
+              porro, voluptate expedita cum, dolorum eveniet magni voluptas ea
+              perspiciatis quis laborum ab fugit repellendus vitae illo
+              eligendi, nisi quibusdam alias dicta suscipit. Quisquam, veritatis
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Pariatur, officia? Quod modi veniam iste quos itaque aliquam
+              voluptate adipisci facere vero voluptatem sit animi in inventore,
+              fuga eos est non reiciendis! Ullam fuga quia saepe reiciendis
+              numquam. Corporis ipsum sunt nam voluptates, et amet enim esse
+              voluptatem atque? Adipisci, possimus consequatur provident illo
+              expedita architecto numquam, facere ab, nisi nobis nemo doloribus
+              et dicta beatae deserunt molestiae accusamus quam repellendus?
+              Harum eius ipsa maxime ea at suscipit minus recusandae nesciunt?
+              Culpa necessitatibus voluptate aperiam! Totam officia facere
+              placeat. Aliquid suscipit dolorem ullam. Animi architecto
+              excepturi tempore magni nemo, cupiditate non? Lorem ipsum dolor
+              sit, amet consectetur adipisicing elit. Dolor veniam similique
+              porro, voluptate expedita cum, dolorum eveniet magni voluptas ea
+              perspiciatis quis laborum ab fugit repellendus vitae illo
+              eligendi, nisi quibusdam alias dicta suscipit. Quisquam, veritatis
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Pariatur, officia? Quod modi veniam iste quos itaque aliquam
+              voluptate adipisci facere vero voluptatem sit animi in inventore,
+              fuga eos est non reiciendis! Ullam fuga quia saepe reiciendis
+              numquam. Corporis ipsum sunt nam voluptates, et amet enim esse
+              voluptatem atque? Adipisci, possimus consequatur provident illo
+              expedita architecto numquam, facere ab, nisi nobis nemo doloribus
+              et dicta beatae deserunt molestiae accusamus quam repellendus?
+              Harum eius ipsa maxime ea at suscipit minus recusandae nesciunt?
+              Culpa necessitatibus voluptate aperiam! Totam officia facere
+              placeat. Aliquid suscipit dolorem ullam. Animi architecto
+              excepturi tempore magni nemo, cupiditate non? Lorem ipsum dolor
+              sit, amet consectetur adipisicing elit. Dolor veniam similique
+              porro, voluptate expedita cum, dolorum eveniet magni voluptas ea
+              perspiciatis quis laborum ab fugit repellendus vitae illo
+              eligendi, nisi quibusdam alias dicta suscipit. Quisquam, veritatis
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Pariatur, officia? Quod modi veniam iste quos itaque aliquam
+              voluptate adipisci facere vero voluptatem sit animi in inventore,
+              fuga eos est non reiciendis! Ullam fuga quia saepe reiciendis
+              numquam. Corporis ipsum sunt nam voluptates, et amet enim esse
+              voluptatem atque? Adipisci, possimus consequatur provident illo
+              expedita architecto numquam, facere ab, nisi nobis nemo doloribus
+              et dicta beatae deserunt molestiae accusamus quam repellendus?
+              Harum eius ipsa maxime ea at suscipit minus recusandae nesciunt?
+              Culpa necessitatibus voluptate aperiam! Totam officia facere
+              placeat. Aliquid suscipit dolorem ullam. Animi architecto
+              excepturi tempore magni nemo, cupiditate non? Lorem ipsum dolor
+              sit, amet consectetur adipisicing elit. Dolor veniam similique
+              porro, voluptate expedita cum, dolorum eveniet magni voluptas ea
+              perspiciatis quis laborum ab fugit repellendus vitae illo
+              eligendi, nisi quibusdam alias dicta suscipit. Quisquam, veritatis
             </Text>
           </View>
-          <View style={{marginBottom: 50}}>
+          <View style={{marginBottom: 10}}>
             <Text style={{fontSize: 11}}>
               213 Suka - 23 Komentar - 123 Shared
             </Text>
@@ -129,14 +197,30 @@ const AgendaShow = ({navigation}) => {
               </View>
             </View>
           </View>
+          <View
+            style={{
+              padding: 1,
+              marginBottom: 200,
+              backgroundColor: 'red',
+            }}></View>
         </ScrollView>
       </View>
-      <View style={styles.bottom}>
+      <View style={{position: 'absolute', bottom: 70, right: 20}}>
         <TouchableOpacity
           onPress={() => navigation.navigate('agenda')}
-          style={{flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor: Color.first, borderTopRightRadius: 10, marginRight: 5}}>
+          style={{
+            justifyContent: 'center',
+            alignItems: 'center',
+            backgroundColor: Color.first,
+            borderRadius: 50,
+            width: 40,
+            height: 40,
+            elevation: 5
+          }}>
           <Home widht={15} height={15} fill="white" />
         </TouchableOpacity>
+      </View>
+      <View style={styles.bottom}>
         <View style={{flex: 10, justifyContent: 'center'}}>
           <View style={styles.cord}>
             <TextInput style={styles.input} placeholder="Komentar ..." />
@@ -186,7 +270,7 @@ const styles = StyleSheet.create({
     paddingTop: 10,
     borderBottomWidth: 0.5,
     borderColor: 'gray',
-    marginBottom: 10
+    marginBottom: 10,
   },
   img: {width: '100%', height: 140, borderRadius: 10, marginBottom: 10},
   bottom: {
@@ -196,7 +280,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     height: 50,
     flexDirection: 'row',
-    paddingRight: 10,
+    paddingHorizontal: 10,
   },
   cord: {
     height: 40,
