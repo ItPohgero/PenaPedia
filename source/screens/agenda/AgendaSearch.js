@@ -1,6 +1,6 @@
 import React from 'react';
 import {StyleSheet, TextInput, View, TouchableOpacity} from 'react-native';
-import Home from '../../assets/pena.svg';
+import Home from '../../assets/logoSvg/home.svg';
 import Color from '../../utils/Color';
 
 const AgendaSearch = ({navigation}) => {
@@ -13,7 +13,7 @@ const AgendaSearch = ({navigation}) => {
         <TouchableOpacity
           onPress={() => navigation.navigate('home')}
           style={{flex: 1, justifyContent: 'center', alignItems: 'center', marginRight: 10}}>
-          <Home widht={25} height={25} fill="white" />
+          <Home widht={15} height={15} fill="white" />
         </TouchableOpacity>
       </View>
     </View>

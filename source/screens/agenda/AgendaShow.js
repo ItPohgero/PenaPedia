@@ -18,7 +18,7 @@ import Shared from '../../assets/logoSvg/share.svg';
 import Whatsapp from '../../assets/logoSvg/whatsapp.svg';
 import Alarm from '../../assets/logoSvg/agenda.svg';
 import Color from '../../utils/Color';
-import Back from '../../assets/logoSvg/back.svg';
+import Home from '../../assets/logoSvg/home.svg';
 import Chat from '../../assets/logoSvg/paper-plane.svg';
 
 const AgendaShow = ({navigation}) => {
@@ -35,7 +35,7 @@ const AgendaShow = ({navigation}) => {
   };
   return (
     <View style={{flex: 1}}>
-      <View style={{marginBottom: 50, }}>
+      <View style={{marginBottom: 50}}>
         <ScrollView style={styles.box}>
           <View style={styles.header}>
             <View style={styles.profile}>
@@ -44,9 +44,9 @@ const AgendaShow = ({navigation}) => {
             <TouchableOpacity
               onPress={() => navigation.navigate('AgendaShow')}
               style={styles.title}>
-              <Text style={{fontWeight: 'bold', fontSize: 13}}>lorem5</Text>
-              <Text style={{fontSize: 10}}>Posted 12312</Text>
-              <Text style={{fontSize: 10, color: 'green'}}>imum</Text>
+              <Text style={{fontWeight: 'bold', fontSize: 13}}>PAC IPNU Magetan</Text>
+              <Text style={{fontSize: 10}}>Posted 12 Agustus 2021</Text>
+              <Text style={{fontSize: 10, color: 'green'}}>Terbuka untuk umum</Text>
             </TouchableOpacity>
             <View style={styles.link}>
               <TouchableOpacity>
@@ -80,13 +80,13 @@ const AgendaShow = ({navigation}) => {
           </View>
           <View style={{marginBottom: 50}}>
             <Text style={{fontSize: 11}}>
-              21312 Suka - 23 Komentar - 123 Shared
+              213 Suka - 23 Komentar - 123 Shared
             </Text>
             <View
               style={{flexDirection: 'row', justifyContent: 'space-between'}}>
               <View style={{marginTop: 6, flexDirection: 'row'}}>
                 <TouchableOpacity>
-                  <Like width={16} height={16} fill="gray" />
+                  <Like width={16} height={16} fill="red" />
                 </TouchableOpacity>
                 <TouchableOpacity>
                   <Komentar
@@ -134,8 +134,8 @@ const AgendaShow = ({navigation}) => {
       <View style={styles.bottom}>
         <TouchableOpacity
           onPress={() => navigation.navigate('agenda')}
-          style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
-          <Back widht={25} height={25} fill="gray" />
+          style={{flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor: Color.first, borderTopRightRadius: 10, marginRight: 5}}>
+          <Home widht={15} height={15} fill="white" />
         </TouchableOpacity>
         <View style={{flex: 10, justifyContent: 'center'}}>
           <View style={styles.cord}>
@@ -196,8 +196,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     height: 50,
     flexDirection: 'row',
-    padding: 4,
-    paddingHorizontal: 10,
+    paddingRight: 10,
   },
   cord: {
     height: 40,

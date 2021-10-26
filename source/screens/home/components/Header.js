@@ -5,6 +5,7 @@ import User from '../../../assets/logoSvg/user.svg';
 import Verified from '../../../assets/logoSvg/verified.svg';
 import Chat from '../../../assets/logoSvg/komentar.svg';
 import Color from '../../../utils/Color';
+import Clock from '../../../assets/logoSvg/clock.svg';
 
 const Header = ({navigation}) => {
   const [time, setTime] = useState(new Date().toLocaleTimeString());
@@ -59,20 +60,9 @@ const Header = ({navigation}) => {
         </Text>
       </View>
 
-      <View
-        style={{
-          position: 'absolute',
-          bottom: -10,
-          height: 20,
-          marginLeft: 10,
-          backgroundColor: 'black',
-          justifyContent: 'center',
-          alignItems: 'center',
-          borderRadius: 3,
-          flexDirection: 'row',
-          paddingHorizontal: 10,
-        }}>
-        <Text style={{color: 'orange'}}>{time}</Text>
+      <View style={styles.dateTime}>
+        <Text style={{marginRight: 8, color: 'white'}}>{time}</Text>
+        <Clock width={13} height={13} fill="white" />
         <Text style={{marginLeft: 8, color: 'white'}}>{date}</Text>
       </View>
     </View>
@@ -85,7 +75,11 @@ const styles = StyleSheet.create({
   body: {
     height: 100,
     backgroundColor: '#07A3BC',
-    marginBottom: 15,
+    marginBottom: 10,
+    paddingBottom: 25,
+    borderBottomRightRadius: 15,
+    borderBottomLeftRadius: 15,
+    alignItems: 'center',
   },
   search: {
     backgroundColor: 'white',
@@ -96,5 +90,17 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     paddingHorizontal: 6,
     justifyContent: 'space-between',
+  },
+  dateTime: {
+    position: 'absolute',
+    bottom: -10,
+    height: 20,
+    marginLeft: 10,
+    backgroundColor: '#aaa',
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderRadius: 3,
+    flexDirection: 'row',
+    paddingHorizontal: 20,
   },
 });

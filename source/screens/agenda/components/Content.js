@@ -33,7 +33,7 @@ const Content = ({navigation, title, target, created_at, content, image, suka, k
           <View style={styles.profile}>
             <User width={25} height={25} fill="gray" />
           </View>
-          <TouchableOpacity onPress={() => navigation.navigate("AgendaShow")} style={styles.title}>
+          <TouchableOpacity style={styles.title}>
             <Text style={{fontWeight: 'bold', fontSize: 13}}>{title}</Text>
             <Text style={{fontSize: 10}}>Posted {created_at}</Text>
             <Text style={{fontSize: 10, color: 'green'}}>{target}</Text>
@@ -44,10 +44,12 @@ const Content = ({navigation, title, target, created_at, content, image, suka, k
             </TouchableOpacity>
           </View>
         </View>
-        <View style={styles.content}>
+        <TouchableOpacity
+          onPress={() => navigation.navigate('AgendaShow')}
+          style={styles.content}>
           <Text style={{fontSize: 13, textAlign: 'justify'}}>{content}</Text>
           <Image source={image} style={styles.img} />
-        </View>
+        </TouchableOpacity>
         <View style={{marginTop: 10}}>
           <Text style={{fontSize: 11}}>
             {suka} Suka - {komentar} Komentar - {shared} Shared
